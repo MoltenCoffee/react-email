@@ -1,18 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-condition */
 import { convert } from "html-to-text";
 import { pretty } from "./utils/pretty";
-import type {
-  ReactDOMServerReadableStream,
-} from "react-dom/server";
+import type { ReactDOMServerReadableStream } from "react-dom/server";
 
-let decoder = new TextDecoder('utf-8');
+let decoder = new TextDecoder("utf-8");
 
 const readStream = async (
   readableStream: NodeJS.ReadableStream | ReactDOMServerReadableStream,
 ) => {
   let result = "";
 
-  if ('allReady' in readableStream) {
+  if ("allReady" in readableStream) {
     const reader = readableStream.getReader();
 
     while (true) {
