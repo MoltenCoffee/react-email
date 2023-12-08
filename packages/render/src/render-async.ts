@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-condition */
 import { convert } from "html-to-text";
-import pretty from "pretty";
+import { pretty } from "./utils/pretty";
 import type {
   ReactDOMServerReadableStream,
 } from "react-dom/server";
