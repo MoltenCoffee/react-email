@@ -13,26 +13,14 @@ Install component from your command line.
 <CodeGroup>
 
 ```sh npm
-npm install @react-email/components -E
-
-# or get the individual package
-
 npm install @react-email/markdown -E
 ```
 
 ```sh yarn
-yarn add @react-email/components -E
-
-# or get the individual package
-
 yarn add @react-email/markdown -E
 ```
 
 ```sh pnpm
-pnpm add @react-email/components -E
-
-# or get the individual package
-
 pnpm add @react-email/markdown -E
 ```
 
@@ -43,7 +31,8 @@ pnpm add @react-email/markdown -E
 Add the component to your email template. Include styles where needed.
 
 ```jsx
-import { Markdown, Html } from "@react-email/components";
+import { Html } from "@react-email/components";
+import { Markdown } from "@react-email/markdown";
 
 const Email = () => {
   return (
